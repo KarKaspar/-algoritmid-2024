@@ -1,0 +1,4 @@
+a) Kõigil neil kolmel sortimisalgoritmidel on halvimal juhul ajakompleksus
+O(n^2)
+b) Insertion sort ja bubble sort oleks sobiv sortimaks loendit täisarvudega, mis
+jäävad vahemikku 1 kuni 100, kuna parimal juhul need mõlemad on kiiremad kui selection sort.
