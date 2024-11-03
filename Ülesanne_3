@@ -4,4 +4,4 @@ Algne loend: [12, 11, 13, 5, 6, 7]
 [5, 11, 12, 13, 6, 7]
 [5, 6, 11, 12, 13, 7]
 sorteeritud loend: [5, 6, 7, 11, 12, 13]
-Insertion sort teeb vähem liikutusi, see jätab meelde eelnevad numbrid, nii moodi saab võrrelda mitmeid numbreid kiiremini, aga mälu võib kuluda rohkem.
+Insertion sort teeb vähem liikutusi, kuna on vähem asju mida liikutada.
