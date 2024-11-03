@@ -1,0 +1,51 @@
+Algne loend: [64, 34, 25, 12, 22, 11, 90]
+
+Võrdle 64 ja 34, kuna 64 > 34, vaheta kohad.
+Võrdle 64 ja 25, kuna 64 > 25, vaheta kohad.
+Võrdle 64 ja 12, kuna 64 > 12, vaheta kohad.
+Võrdle 64 ja 22, kuna 64 > 22, vaheta kohad.
+Võrdle 64 ja 11, kuna 64 > 11, vaheta kohad.
+Võrdle 64 ja 90, kuna 64 < 90, ei vaheta kohti.
+Loend: [34, 25, 12, 22, 11, 64, 90]
+
+Võrdle 34 ja 25, kuna 34 > 25, vaheta kohad.
+Võrdle 34 ja 12, kuna 34 > 12, vaheta kohad.
+Võrdle 34 ja 22, kuna 34 > 22, vaheta kohad.
+Võrdle 34 ja 11, kuna 34 > 11, vaheta kohad.
+Võrdle 34 ja 64, kuna 34 < 64, ei vaheta kohti.
+Võrdle 64 ja 90, kuna 64 < 90, ei vaheta kohti.
+Loend: [25, 12, 22, 11, 34, 64, 90]
+
+Võrdle 25 ja 12, kuna 25 > 12, vaheta kohad.
+Võrdle 25 ja 22, kuna 25 > 22, vaheta kohad.
+Võrdle 25 ja 11, kuna 25 > 11, vaheta kohad.
+Võrdle 25 ja 34, kuna 25 < 34, ei vaheta kohti.
+Võrdle 34 ja 64, kuna 34 < 64, ei vaheta kohti.
+Võrdle 64 ja 90, kuna 64 < 90, ei vaheta kohti.
+Loend peale kolmandat läbimist: [12, 22, 11, 25, 34, 64, 90]
+
+Võrdle 12 ja 22, kuna 12 < 22, ei vaheta kohti.
+Võrdle 22 ja 11, kuna 22 > 11, vaheta kohad.
+Võrdle 22 ja 25, kuna 22 < 25, ei vaheta kohti.
+Võrdle 25 ja 34, kuna 25 < 34, ei vaheta kohti.
+Võrdle 34 ja 64, kuna 34 < 64, ei vaheta kohti.
+Võrdle 64 ja 90, kuna 64 < 90, ei vaheta kohti.
+Loend peale neljandat läbimist: [12, 11, 22, 25, 34, 64, 90]
+
+Võrdle 12 ja 11, kuna 12 > 11, vaheta kohad.
+Võrdle 12 ja 22, kuna 12 < 22, ei vaheta kohti.
+Võrdle 22 ja 25, kuna 22 < 25, ei vaheta kohti.
+Võrdle 25 ja 34, kuna 25 < 34, ei vaheta kohti.
+Võrdle 34 ja 64, kuna 34 < 64, ei vaheta kohti.
+Võrdle 64 ja 90, kuna 64 < 90, ei vaheta kohti.
+Loend peale viiendat läbimist: [11, 12, 22, 25, 34, 64, 90]
+
+Võrdle 11 ja 12, kuna 11 < 12, ei vaheta kohti.
+Võrdle 12 ja 22, kuna 12 < 22, ei vaheta kohti.
+Võrdle 22 ja 25, kuna 22 < 25, ei vaheta kohti.
+Võrdle 25 ja 34, kuna 25 < 34, ei vaheta kohti.
+Võrdle 34 ja 64, kuna 34 < 64, ei vaheta kohti.
+Võrdle 64 ja 90, kuna 64 < 90, ei vaheta kohti.
+
+Kõik elemendid on õiges järjestuses, seega vahetusi enam ei tehta.
+Sorteeritud loend: [11, 12, 22, 25, 34, 64, 90]
