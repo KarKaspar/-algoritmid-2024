@@ -1,0 +1,4 @@
+Kui sortimisalgoritm on stabiilne see tähendab, et kui loendis on kaks sama väärtusga elementi, siis nad säilitavad pärast sortimist oma algse järjekorra.
+
+Kui sortimisalgoritm on adaptiivne, kuna kui loend on juba osaliselt sorteeritud, suudab ta kiiresti iga elemendi õigele kohale paigutada, tehes vähem liigutusi ja võrdlusi.
+Nt: Insertion sort.
