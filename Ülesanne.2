@@ -1,1 +1,21 @@
-Kahendotsingu
+def Kahendotsing(arr, otsitav):
+    alg = 0
+    lopp = len(arr) - 1
+    while alg <= lopp:
+        kesk = (alg + lopp) // 2
+        if arr[kesk] == otsitav:
+            return kesk
+        elif arr[kesk] < otsitav:
+            alg = kesk + 1
+        else:
+            lopp = kesk - 1
+    return "puudub"
+
+#-------------------------------------------
+#Kahendotsingu ajakompleksus: O(logn)
+#Lineaarotsingu ajakompleksus: O(n)
+
+#Neid võrreldes tundub et kahendotsing on kiirem ja seetõttu parem.
+
+#-------------------------------------------------------------------------
+#Kahendotsing on alati parem, kui lineaarotsing, kui tegemist on sorteeritud nimekirjaga.
