@@ -1,1 +1,20 @@
-Jump Search
+def JumpSearch(arr, otsitav):
+    n = len(arr)
+    samm = round(n**(1/2))
+    alg = 0
+    while arr[min(samm, n)-1] < otsitav:
+        alg = samm
+        samm += round(n**(1/2))
+        if alg >= n:
+            return "puudub"
+    for i in range(alg,min(samm, n)):
+        if arr[i] == otsitav:
+            return i
+    return "puudub"
+
+#------------------------------------------------
+#JumpSearchi' ajakompleksus on O(n**(1/2))
+#see on võrreldes (lineaarotsinguga ja kahendotsinguga) kõige kiirem.
+
+#------------------------------------------------------------------------
+#JumpSearch on kõige parem neist kolmest, kui tegu on sorteeritud nimekirjaga.
