@@ -1,1 +1,17 @@
-Lineaarotsing
+def Lineaarotsing(arr, otsitav):
+    for i in range(len(arr)):
+        if arr[i] == otsitav:
+            return i
+    return "puudub"
+
+#------------------------------------------------
+#ajakomplekssust:
+  #Parim juhus: O(1)
+  #Halvim juhus: O(n)
+#ruumikomplekssust: O(1)
+
+#------------------------------------------------
+#Reaalmaailma rakendused sellele:
+  #Kontrollimine, kas mingis nimekirjas on kindel väärtus.
+#Piirangud:
+  #Aeglaseks muutub suurte andmekogumitega.
