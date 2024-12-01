@@ -1,0 +1,23 @@
+def index_mapping(values, min_value, max_value):
+    # Määrame massiivi suuruse (lisame kaks eraldi osa positiivsetele ja negatiivsetele väärtustele)
+    size = max_value - min_value + 1
+    
+    mapping = [False] * size  
+    
+    for value in values:
+        mapping[value - min_value] = True  
+    
+    return mapping
+
+values = [10, -5, 0, 5, 3, -3]
+min_value = -10
+max_value = 10
+mapping = index_mapping(values, min_value, max_value)
+
+# Kontrollime, kas väärtused on olemas
+def check_value(mapping, value, min_value):
+    index = value - min_value
+    return mapping[index]
+
+print(check_value(mapping, 5, min_value))
+print(check_value(mapping, -7, min_value))
