@@ -1,0 +1,45 @@
+Põhiidee:
+Räsimine abil muudetakse suvalise suurusega sisend fikseeritud suurusega väljundiks.
+
+Eesmärk:
+Räsimine on sageli kasutusel andmete kiireks salvestamiseks ja otsimiseks. Selle eesmärk on andmete organiseerimine nii, et need oleksid hõlpsasti ligipääsetavad ja töötlemiseks optimeeritud.
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Omadused:
+Sama sisend annab alati sama räsiväärtuse.
+Olulisus: Ilma selleta poleks võimalik otsinguid ega andmete kontrollimist teostada.
+
+Erinev sisend erinev väljund.
+Olulisus: Suurendab jõudlust.
+
+Väljund peab olema alati sama pikk, sõltumata sisendi suurusest.
+Olulisus: See lihtsustab salvestamist ja töötlemist, eriti suuremahuliste andmete puhul.
+
+#-----------------------------------------------------------------------------------------------
+Kokkupõrgete lahendamise tehnikad
+Kui kaks või enam sisendit tekitavad sama räsiväärtuse (kokkupõrge), tuleb see olukord lahendada. Siin on kaks levinud meetodit:
+
+1. Eraldi aheldamine
+Kuidas see töötab:
+Iga räsitabeli pesa salvestab seotud nimekirja (linked list) või muu konteineri, kuhu kõik sama räsiväärtusega elemendid lisatakse.
+
+Näide:
+Kui "kass" ja "koer" annavad sama räsiväärtuse, salvestatakse need mõlemad samasse konteinerisse.
+Eelised:
+
+Lihtne rakendada.
+Sobib hästi, kui on palju kokkupõrkeid või dünaamiliselt muutuv tabeli suurus.
+Puudused:
+
+Kõrge kokkupõrgete sageduse korral võib konteiner muutuda väga suureks, mis aeglustab otsinguid.
+Vajab lisamälu konteinerite jaoks.
+
+2. Avatud aadresseerimine (Open Addressing)
+Kuidas see töötab:
+Kokkupõrke korral otsitakse tabelist järgmine vaba pesa kindla reegli alusel ja uus element paigutatakse sinna.
+Kõige levinumad avatud aadresseerimise tehnikad on:
+
+Lineaarne sondeerimine (Linear Probing): Järgmine pesa kontrollitakse järjestikku (näiteks i+1, i+2 jne).
+Kvadratuurprobeeirmine (Quadratic Probing): Kontrollitakse pesasid kindla ruutfunktsiooni järgi (näiteks i+1^2, i+2^2 jne).
+Topelt räsimine (Double Hashing): Kasutatakse teist räsifunktsiooni vaba pesa otsimiseks.
+Näide:
+Kui pesa 5 on hõivatud, proovib algoritm pesasid 6, 7 jne, kuni leitakse tühi pesa.
