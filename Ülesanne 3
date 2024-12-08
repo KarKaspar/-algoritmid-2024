@@ -1,0 +1,11 @@
+Hierarhiline struktuur:
+Igal sõlmel on kuni kaks last: vasak laps ja parem laps.
+Reegel:
+Vasakul alampuul on ainult sõlmed, mille väärtused on väiksemad kui vanema väärtus.
+Paremal alampuul on ainult sõlmed, mille väärtused on suuremad kui vanema väärtus.
+
+-------------------------------------------------------------------------------------
+Parim juhtum: Kui puu on tasakaalus, on otsingu-, sisestus- ja kustutustoimingute keerukus oleks O(log n).
+Halvim juhtum: Kui puu on tasakaalustamata, muutub keerukus O(n), kuna iga toiming peab läbima kõik sõlmed.
+
+Seda saaks teoreetiliselt optimeerida kui vahetada mõndade laste ja vanemate kohad ära, nii et mõlemal lapsel oleks ühtlane juure pikkus
